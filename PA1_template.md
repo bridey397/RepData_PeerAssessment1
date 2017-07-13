@@ -16,7 +16,7 @@ stepsEachDay <- tapply(data$steps, data$date, FUN = sum, na.rm = T)
 hist(stepsEachDay, xlab = "Number of Steps per Day")
 ```
 
-![plot of chunk unnamed-chunk-2](/Users/bridge23/Documents/Coursera/figures/unnamed-chunk-2-1.png)
+![Alt text](/Users/bridge23/Documents/Coursera/figures/unnamed-chunk-2-1.png)
 
 ```r
 mean(stepsEachDay)
