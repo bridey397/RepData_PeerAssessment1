@@ -47,7 +47,7 @@ ggplot(data=averages, aes(x=interval, y=steps)) +
     ylab("average number of steps taken")
 ```
 
-![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3-1.png)
+![plot of chunk unnamed-chunk-3](https://github.com/bridey397/RepData_PeerAssessment1/blob/master/unnamed-chunk-3-1.png)
 
 ```r
 averages[which.max(averages$steps),]
@@ -88,7 +88,7 @@ filledSteps <- tapply(filled.data$steps, filled.data$date, FUN=sum)
 hist(filledSteps, xlab = "Total number of steps taken each day")
 ```
 
-![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4-1.png)
+![plot of chunk unnamed-chunk-4](https://github.com/bridey397/RepData_PeerAssessment1/blob/master/unnamed-chunk-4-1.png)
 
 ```r
 mean(filledSteps)
@@ -129,5 +129,5 @@ ggplot(averages, aes(interval, steps)) + geom_line() + facet_grid(day ~ .) +
     xlab("5-minute interval") + ylab("Number of steps")
 ```
 
-![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-5-1.png)
+![plot of chunk unnamed-chunk-5](https://github.com/bridey397/RepData_PeerAssessment1/blob/master/unnamed-chunk-5-1.png)
 
